@@ -16,7 +16,7 @@ ee_Init <- function(drive=FALSE, ...) {
     invisible()
   }, error = function(e) {
     # rgee::ee_Initialize(drive=drive, ...)
-    ee$Initialize(...)
+    ee_Initialize(...)
     # message(sprintf('%s', e$message))
   })
 }

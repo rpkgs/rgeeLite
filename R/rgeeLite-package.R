@@ -15,3 +15,7 @@ NULL
     )
   }
 }
+
+#' @importFrom rgee ee
+#' @export
+rgee::ee
