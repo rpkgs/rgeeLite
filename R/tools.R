@@ -1,3 +1,7 @@
+#' @export
+fprintf <- function(...) cat(sprintf(...))
+
+
 #' @title rgee `imgcol` tools collection
 #' @name ee_tools
 NULL

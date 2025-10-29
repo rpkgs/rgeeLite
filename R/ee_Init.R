@@ -27,9 +27,9 @@ ee_auth_ci <- function(token = NULL) {
   reticulate::source_python(ci_auth)
 
   if (is.null(token)) {
-    token = os.getenv("EARTHENGINE_TOKEN")
+    token = Sys.getenv("EARTHENGINE_TOKEN")
   }
-  auto_Initialize(token)
+  auto_Initialize(token) ## defined in ci_auth.py
   print("ee_auth_ci: Authentication successful!")
 }
 
