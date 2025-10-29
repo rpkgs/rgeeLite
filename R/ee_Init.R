@@ -23,7 +23,7 @@ ee_Init <- function(drive=FALSE, ...) {
 
 #' @export
 ee_auth_ci <- function(token = NULL) {
-  ci_auth <- system.file("python/ci_auth.py", package = "rgee2")
+  ci_auth <- system.file("python/ci_auth.py", package = "rgeeLite")
   reticulate::source_python(ci_auth)
 
   if (is.null(token)) {

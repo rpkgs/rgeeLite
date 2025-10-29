@@ -98,7 +98,7 @@ jobs:
           name: coverage-test-failures
           path: ${{ runner.temp }}/package
 
-      - uses: codecov/codecov-action@v5
+      - uses: codecov/codecov-action@v4
         with:
           fail_ci_if_error: ${{ github.event_name != 'pull_request' && true || false }}
           file: ./cobertura.xml
