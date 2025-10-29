@@ -7,3 +7,5 @@
 
 *.json
 backup
+
+*debug*

@@ -13,20 +13,14 @@ if (Sys.getenv("GITHUB_ACTIONS") == "true") {
 
   Sys.setenv(RETICULATE_PYTHON = Sys.which("python")) # Set Python interpreter
   reticulate::use_python(Sys.which("python")) # double confirm
+
+  rgeeLite::ee_auth_ci()
 } else {
-  rgeeLite::ee_Init()
+  rgeeLite::ee_Init() # Initialize rgeeLite
 }
 
-
 library(testthat)
+library(rgee)
 library(rgeeLite)
 
 test_check("rgeeLite")
-
-
-test_that("print image works", {
-  expect_equal(2 * 2, 4)
-
-  img = ee$Image(1)
-  print(img)
-})
