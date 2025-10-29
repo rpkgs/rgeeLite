@@ -1,4 +1,4 @@
-Package: rpkg.template
+Package: rgeeLite
 Title: What the Package Does (One Line, Title Case)
 Version: 0.1.0.9000
 Authors@R: c(
@@ -7,10 +7,10 @@ Authors@R: c(
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Imports:
-    magrittr
+    magrittr, rgee, reticulate
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3

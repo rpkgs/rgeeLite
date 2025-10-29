@@ -1,3 +1,4 @@
+#' @import crayon rgee
 #' @import magrittr
 #' @keywords internal
 "_PACKAGE"
